@@ -177,3 +177,34 @@ class Descriptor: NSObject {
         self.descriptor = descriptor
     }
 }
+
+class Advertisement: NSObject {
+    let value: Any
+    let key: String
+    static let advertisementKeys = [
+        CBAdvertisementDataIsConnectable,
+        CBAdvertisementDataLocalNameKey,
+        CBAdvertisementDataServiceDataKey,
+        CBAdvertisementDataTxPowerLevelKey,
+        CBAdvertisementDataServiceUUIDsKey,
+        CBAdvertisementDataManufacturerDataKey,
+        CBAdvertisementDataOverflowServiceUUIDsKey,
+        CBAdvertisementDataSolicitedServiceUUIDsKey
+    ]
+    static let advertisementDiscriptionKeys = [
+        CBAdvertisementDataIsConnectable: "Is Connnectable",
+        CBAdvertisementDataLocalNameKey: "Local Name",
+        CBAdvertisementDataServiceDataKey: "Service Data",
+        CBAdvertisementDataTxPowerLevelKey: "Power Level",
+        CBAdvertisementDataServiceUUIDsKey: "Service UUIDs",
+        CBAdvertisementDataManufacturerDataKey: "Manufacturer Data",
+        CBAdvertisementDataOverflowServiceUUIDsKey: "Overflow Service UUID",
+        CBAdvertisementDataSolicitedServiceUUIDsKey: "Solicited Service UUID"
+    ]
+
+
+    init(key: String, value: Any) {
+        self.key = key
+        self.value = value
+    }
+}

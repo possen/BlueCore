@@ -44,7 +44,7 @@ class PeripheralsViewController: UITableViewController {
                 print("default")
             }
         }
-        let section = TableViewAdaptorSection<PeripheralCell>(
+        let peripheralSection = TableViewAdaptorSection<PeripheralCell>(
             cellReuseIdentifier: "PeripheralCell",
             title: "Devices",
             count: { self.perhipherals.count },
@@ -52,7 +52,8 @@ class PeripheralsViewController: UITableViewController {
         ) { (cell, index) in
             cell.model = self.perhipherals[index]
         }
-        adaptor = TableViewAdaptor(tableView: tableView, sections: [section])
+
+        adaptor = TableViewAdaptor(tableView: tableView, sections: [peripheralSection])
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

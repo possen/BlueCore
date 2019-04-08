@@ -31,7 +31,21 @@ class PeripheralDetailViewController: UITableViewController {
         { (cell, index) in
             cell.model = self.peripheral?.services[index]
         }
-        adaptor = TableViewAdaptor(tableView: tableView, sections: [servicesSection])
+        let advertisementSection = TableViewAdaptorSection<AdvertisementCell>(
+            cellReuseIdentifier: "AdvertisementCell",
+            title: "Advertisement",
+            count: { Advertisement.advertisementKeys.count },
+            select: nil
+        ) { (cell, index) in
+            let key = Advertisement.advertisementKeys[index]
+            if let peripheral = self.peripheral {
+                cell.model = Advertisement(key: key, value: peripheral.advertisementData[key] ?? "no value")
+            } else {
+                cell.model = Advertisement(key: key, value: "no value")
+            }
+        }
+
+        adaptor = TableViewAdaptor(tableView: tableView, sections: [servicesSection, advertisementSection])
         central.connect(peripheral: peripheral)
     }
 

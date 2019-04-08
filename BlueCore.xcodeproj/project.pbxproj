@@ -13,6 +13,7 @@
 		D52697C7225AE6D800680010 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = D52697C6225AE6D800680010 /* Readme.md */; };
 		D539C1E022592ED5003057FB /* DescriptorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D539C1DF22592ED5003057FB /* DescriptorCell.swift */; };
 		D547DA4E225A937800673B70 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547DA4D225A937800673B70 /* ServiceCell.swift */; };
+		D554F7BC225B1647003180EB /* AdvertisementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D554F7BB225B1647003180EB /* AdvertisementCell.swift */; };
 		D5AF8D4A225483280088CF16 /* PeripheralDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF8D49225483280088CF16 /* PeripheralDetailViewController.swift */; };
 		D5AF8D4C22548A000088CF16 /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF8D4B22548A000088CF16 /* CharacteristicCell.swift */; };
 		D5FE27EC22501217009CB973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE27EB22501217009CB973 /* AppDelegate.swift */; };
@@ -56,6 +57,7 @@
 		D52697C6225AE6D800680010 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		D539C1DF22592ED5003057FB /* DescriptorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptorCell.swift; sourceTree = "<group>"; };
 		D547DA4D225A937800673B70 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		D554F7BB225B1647003180EB /* AdvertisementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementCell.swift; sourceTree = "<group>"; };
 		D5AF8D49225483280088CF16 /* PeripheralDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralDetailViewController.swift; sourceTree = "<group>"; };
 		D5AF8D4B22548A000088CF16 /* CharacteristicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicCell.swift; sourceTree = "<group>"; };
 		D5FE27E822501217009CB973 /* BlueCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				D52697C2225AD79300680010 /* CharacteristicViewController.swift */,
 				D5FE283C22508360009CB973 /* TableViewAdaptor.swift */,
 				D5FE283322501E85009CB973 /* BlueCore.swift */,
+				D554F7BB225B1647003180EB /* AdvertisementCell.swift */,
 				D5FE283E2250A80B009CB973 /* PeripheralCell.swift */,
 				D547DA4D225A937800673B70 /* ServiceCell.swift */,
 				D5AF8D4B22548A000088CF16 /* CharacteristicCell.swift */,
@@ -215,6 +218,7 @@
 				D5AF8D4C22548A000088CF16 /* CharacteristicCell.swift in Sources */,
 				D5FE27EC22501217009CB973 /* AppDelegate.swift in Sources */,
 				D5076ADB225A8EFC00B42C31 /* ServicesViewController.swift in Sources */,
+				D554F7BC225B1647003180EB /* AdvertisementCell.swift in Sources */,
 				D547DA4E225A937800673B70 /* ServiceCell.swift in Sources */,
 				D539C1E022592ED5003057FB /* DescriptorCell.swift in Sources */,
 				D5FE283D22508361009CB973 /* TableViewAdaptor.swift in Sources */,
@@ -366,11 +370,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UVHFXZWG47;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BlueCore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,11 +390,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UVHFXZWG47;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = BlueCore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
