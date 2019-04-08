@@ -1,2 +1,0 @@
-# BlueCore
-iOS CoreBluetooth 
