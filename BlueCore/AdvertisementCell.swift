@@ -24,7 +24,7 @@ class AdvertisementCell: UITableViewCell {
 
     var model: Advertisement? = nil {
         didSet(newValue) {
-            self.textLabel?.text = displayKeyString(key: newValue?.key ?? "none")
+            textLabel?.text = displayKeyString(key: newValue?.key ?? "none")
                 + ": " + displayValueString(value: newValue?.value)
         }
     }

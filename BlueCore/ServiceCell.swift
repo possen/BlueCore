@@ -16,7 +16,7 @@ class ServiceCell: UITableViewCell {
 
     var model: Service? = nil {
         didSet(newValue) {
-            self.textLabel?.text = model?.service.uuid.description
+            textLabel?.text = model?.service.uuid.description
         }
     }
 }

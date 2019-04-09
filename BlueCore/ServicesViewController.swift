@@ -44,7 +44,7 @@ class ServiceViewController: UITableViewController {
             destination.peripheral = peripheral
             if let cell = sender as? CharacteristicCell {
                 if let characteristic = cell.model {
-                    self.peripheral?.discoverDescriptors(for: characteristic)
+                    peripheral?.discoverDescriptors(for: characteristic)
                     destination.characteristics = characteristic
                 }
             }

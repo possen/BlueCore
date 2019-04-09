@@ -16,7 +16,7 @@ class DescriptorCell: UITableViewCell {
 
     var model: Descriptor? = nil {
         didSet(newValue) {
-            self.textLabel?.text = model?.descriptor.uuid.description
+            textLabel?.text = model?.descriptor.uuid.description
         }
     }
 }

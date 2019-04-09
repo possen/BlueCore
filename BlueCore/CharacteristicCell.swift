@@ -16,7 +16,7 @@ class CharacteristicCell: UITableViewCell {
 
     var model: Characteristic? = nil {
         didSet(newValue) {
-            self.textLabel?.text = model?.characteristic.uuid.description
+            textLabel?.text = model?.characteristic.uuid.description
         }
     }
 }

@@ -44,7 +44,6 @@ class PeripheralDetailViewController: UITableViewController {
                 cell.model = Advertisement(key: key, value: "no value")
             }
         }
-
         adaptor = TableViewAdaptor(tableView: tableView, sections: [servicesSection, advertisementSection])
         central.connect(peripheral: peripheral)
     }

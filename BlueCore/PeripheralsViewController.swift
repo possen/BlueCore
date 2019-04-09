@@ -52,7 +52,6 @@ class PeripheralsViewController: UITableViewController {
         ) { (cell, index) in
             cell.model = self.perhipherals[index]
         }
-
         adaptor = TableViewAdaptor(tableView: tableView, sections: [peripheralSection])
     }
 

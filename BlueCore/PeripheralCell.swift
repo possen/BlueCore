@@ -12,12 +12,12 @@ class PeripheralCell: UITableViewCell {
 
     override func prepareForReuse() {
         textLabel?.text = nil
-         self.accessoryView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        accessoryView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
     }
     
     var model: Peripheral? = nil {
         didSet(newValue) {
-            self.textLabel?.text = newValue?.peripheral.name ?? "Unknown"
+            textLabel?.text = newValue?.peripheral.name ?? "Unknown"
             if let state = newValue?.connectState() {
                 let result: UIColor
                 switch state {
@@ -28,7 +28,7 @@ class PeripheralCell: UITableViewCell {
                 @unknown default:
                     fatalError()
                 }
-                self.accessoryView?.backgroundColor = result
+                accessoryView?.backgroundColor = result
             }
         }
     }
